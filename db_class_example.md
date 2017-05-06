@@ -99,3 +99,43 @@ $sql=”DROP TABLE IF EXISTS `klienci`; CREATE TABLE IF NOT EXISTS `klienci` (
  
 $polacz_db ->createtable($sql);
 </pre>
+<br>
+<b>Określić metodę wstawiania / zapisu danych</b><b>
+
+Tworzymy metode zwaną CRUD, która będzie odpowiedzialna za zarządzanie tabelami w naszej bazie. Aby ustawić parametry dla każdej metody użyjemy wartości pozyskanych z tablic, gdzie indeks tablicy będzie polem tabeli a wartość tego indeksu będzie danymi z pola tablicy. <br>Każda nazwa indeksu musi być wyrażona w cudzysłowach i mieć podane wartości według następujących zasad:<br>
+<ul>
+<li>Łańcuch ciągów powinien  umieszczony w pojedynczy cudzysłów.. Przykład: "name" => 'Maria'</li>
+<li>Wartości liczbowe nie muszą zawierać cudzysłowów. Przykład: "Cena” => 10,50</li>
+<li>NULL lub puste pole nie musi zawierać cudzysłowów. Przykład: "Cena" => NULL</li>
+</ul>
+<pre>
+// Tworzymy funkcję, która pobiera jako parametr pola matrix => dane
+
+public function insert($tabela, $pola_danych){
+
+   // Jeśli wiele danych, oddzielić dane 
+
+  $pole = implode(", ", array_keys($pola_danych));
+
+  $i=0;
+  foreach($pola_danych as $indeks=>$wartość) {
+
+   $data[$i] = "'".$wartość."'";
+      $i++;
+
+  }
+
+  $data = implode(", ",$data);
+
+  // Wstawiamy wartości w każdym polu
+
+if($this->polacz_db->query("INSERT INTO $tabela ($indeks) VALUES ($data)") === TRUE){
+   echo "Wstawiony Nowy klient w bazie danych";
+
+  }else{
+   echo "Błąd, nie jest wstawiano nowegp klienta do bazy danych".$this->polacz_db->error;
+
+  }
+
+}
+</pre>
