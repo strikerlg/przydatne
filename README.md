@@ -10,3 +10,5 @@ przykłady, tutoriale, i inne
  
 http://spyrestudios.com/category/css/page/3/
 http://psd2cssonline.com/node/9
+
+https://www.solvetic.com/tutoriales/article/1528-clase-para-gestionar-bases-de-datos-mysql-con-mysqli-y-php/
