@@ -8,7 +8,16 @@ przykłady, tutoriale, i inne
  Repozytoria:
  <a href="http://www.cssdrive.com/index.php/news/resources-cat/C58/P30/">CSS DRIVE</a><br>
  
-http://spyrestudios.com/category/css/page/3/
-http://psd2cssonline.com/node/9
+http://spyrestudios.com/category/css/page/3/<br>
+http://psd2cssonline.com/node/9<br>
 
-https://www.solvetic.com/tutoriales/article/1528-clase-para-gestionar-bases-de-datos-mysql-con-mysqli-y-php/
+https://www.solvetic.com/tutoriales/article/1528-clase-para-gestionar-bases-de-datos-mysql-con-mysqli-y-php/<br>
+
+<b>Do projektowania stron tutoriale i przykłady:</b><br>
+<a href="http://www.bdinfosys.com/demo/materialx/"> - Przykład fajnej strony z użyciem materialize</a><br>
+<a href="http://www.codecovers.eu/materialadmin/dashboards/dashboard"> - Wzór PA z materialize</a><br>
+<a href="http://www.theme-guys.com/materialism/html/index.html">- Wzór PA z materialize</a><br>
+<a href="https://superdevresources.com/fixed-width-sidebar/"> - Stała szerokość paska bocznego Demo</a><br>
+<a href="http://triangular.oxygenna.com/#!/dashboards/analytics">- Wzór PA z materialize</a><br>
+<a href=""></a><br>
+<a href=""></a><br>
